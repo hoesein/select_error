@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <select name="state" id="state">
+            <option value="">State And Region</option>
+        </select>        
+        <select name="district" id="district">
+            <option value="">District</option>
+        </select>
+        <select name="township" id="township">
+            <option value="">Township</option>
+        </select>
+        <input type="text" id="desc" placeholder="Enter your keyword"> 
+        <button id="btn_save">Save</button>
+    </div>
+    <div>
+        <table class="tbl_desc">
+            <tr>
+                <th>State</th>
+                <th>District</th>
+                <th>Township</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
