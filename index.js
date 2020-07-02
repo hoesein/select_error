@@ -1,4 +1,4 @@
-fetch('/data/lp_state_region.json')
+fetch('https://hoesein.github.io/select_error/data/lp_state_region.json')
 .then( response => {
     return response.json()
 })
@@ -10,7 +10,7 @@ fetch('/data/lp_state_region.json')
 
 $('#state').change(async e => {
     let sr_code = e.target.value ;
-    await fetch('/data/lp_district.json')
+    await fetch('https://hoesein.github.io/select_error/data/lp_district.json')
     .then( res => {
         return res.json();
     })
@@ -27,7 +27,7 @@ $('#state').change(async e => {
 
 $('#district').change( async e => {
     let d_code = e.target.value ;
-    await fetch('/data/lp_township.json')
+    await fetch('https://hoesein.github.io/select_error/data/lp_township.json')
     .then( res => {
         return res.json();
     })
